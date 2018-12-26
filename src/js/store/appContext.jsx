@@ -12,25 +12,40 @@ const Store = PassedComponent => {
 
 		componentDidMount() {
 			// Set your fetchs/Ajax requests here.
-			// make sure you're using the store: this.state.store
-
+			// make sure you’re using the store: this.state.store
 			fetch("https://assets.breatheco.de/apis/fake/meetup/events")
 				.then(response => {
 					if (response.status !== 200) {
-						console.log(
-							"Looks like there was a problem. Status Code: " +
-								response.status
-						);
+						alert("Status Code : " + response.status);
 						return;
 					}
 					response.json().then(data => {
 						let store = this.state.store;
-						store.data = data;
+						store.events = data;
 						this.setState({ store });
 					});
 				})
 				.catch(err => {
-					console.log(err);
+					alert(err);
+				});
+
+			// Set your fetchs/Ajax requests here.
+			// make sure you’re using the store: this.state.store
+
+			fetch("https://assets.breatheco.de/apis/fake/meetup/meetups")
+				.then(response => {
+					if (response.status !== 200) {
+						alert("Status Code : " + response.status);
+						return;
+					}
+					response.json().then(data => {
+						let store = this.state.store;
+						store.meetups = data;
+						this.setState({ store });
+					});
+				})
+				.catch(err => {
+					alert(err);
 				});
 		}
 

@@ -1,0 +1,42 @@
+.card-body {
+    color: blue;
+    text-align: left;
+    font-size: 25px;
+    
+}
+.jumbotron {
+     margin-bottom: 0px;
+}
+.A {
+     text-align: left;
+    color: black;
+    font-size: 25px; 
+}
+.C {
+    text-align: left;
+    color: blue;
+    font-size: 30px; 
+    margin-left: 50px;
+}
+
+.D {
+     color: blue;
+    font-size: 25px; 
+}
+
+.dateformat  {
+    padding-left: 10px;
+     margin-top: 10px;
+     height: 70px;
+     background-color: grey;
+     font-size: 25px; 
+}
+
+ul {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
