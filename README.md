@@ -1,4 +1,4 @@
 MEET UP CLONE APPLICATION
 =========================
 
-This is a Meet Up clone. 
+This is a Meet Up clone
